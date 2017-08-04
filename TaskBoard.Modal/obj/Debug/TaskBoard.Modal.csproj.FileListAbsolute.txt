@@ -1,0 +1,9 @@
+D:\RandD\TaskBoard\TaskBoard.Modal\bin\Debug\TaskBoard.Modal.dll
+D:\RandD\TaskBoard\TaskBoard.Modal\bin\Debug\TaskBoard.Modal.pdb
+D:\RandD\TaskBoard\TaskBoard.Modal\obj\Debug\TaskBoard.Modal.dll
+D:\RandD\TaskBoard\TaskBoard.Modal\obj\Debug\TaskBoard.Modal.pdb
+D:\RandD\TaskBoard\TaskBoard.Modal\bin\Debug\TaskBoard.Modal.dll.config
+D:\RandD\TaskBoard\TaskBoard.Modal\bin\Debug\EntityFramework.dll
+D:\RandD\TaskBoard\TaskBoard.Modal\bin\Debug\EntityFramework.SqlServer.dll
+D:\RandD\TaskBoard\TaskBoard.Modal\bin\Debug\EntityFramework.xml
+D:\RandD\TaskBoard\TaskBoard.Modal\bin\Debug\EntityFramework.SqlServer.xml

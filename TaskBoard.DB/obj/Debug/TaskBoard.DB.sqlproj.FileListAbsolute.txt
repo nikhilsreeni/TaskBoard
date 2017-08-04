@@ -1,0 +1,5 @@
+D:\RandD\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.dacpac
+D:\RandD\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.dll
+D:\RandD\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.pdb
+D:\RandD\TaskBoard\TaskBoard.DB\obj\Debug\TaskBoard.DB.dll
+D:\RandD\TaskBoard\TaskBoard.DB\obj\Debug\TaskBoard.DB.pdb

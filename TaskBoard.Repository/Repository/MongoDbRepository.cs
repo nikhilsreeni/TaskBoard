@@ -30,5 +30,10 @@ namespace TaskBoard.Repository.Repository
         {
             return _mongoDbContext.GetCollection<TEntity>();
         }
+
+        public void Add<TEntity>(TEntity entity) where TEntity : class, new()
+        {
+            _mongoDbContext.AddCollectionAsync(entity);
+        }
     }
 }

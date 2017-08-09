@@ -9,3 +9,10 @@ Scenario: Get all the backlogs available
 	And I have entered 70 into the calculator
 	When I press add
 	Then the result should be 120 on the screen
+
+
+
+Scenario: Create  ElasticSearch 
+	Given i have backlog list
+	When I save the backlog
+	Then i can search the backlog

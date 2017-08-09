@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBoard.BehaviorTest", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBoard.Repository", "TaskBoard.Repository\TaskBoard.Repository.csproj", "{3FEC08F7-301B-4CB6-909D-EC44C4526BB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskBoard.Scheduler", "TaskBoard.Scheduler\TaskBoard.Scheduler.csproj", "{BE7EB674-8E6E-45DC-AC20-28D5454F6FBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{3FEC08F7-301B-4CB6-909D-EC44C4526BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FEC08F7-301B-4CB6-909D-EC44C4526BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FEC08F7-301B-4CB6-909D-EC44C4526BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7EB674-8E6E-45DC-AC20-28D5454F6FBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7EB674-8E6E-45DC-AC20-28D5454F6FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7EB674-8E6E-45DC-AC20-28D5454F6FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7EB674-8E6E-45DC-AC20-28D5454F6FBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,8 @@
 {
-  "baseUrl": "/ng2-admin/",
+  "baseUrl": "/TaskBoard/",
   "locals": {
     "url": "http://localhost:8080",
-    "name": "ng2-admin blog",
+    "name": "TaskBoard blog",
     "owner": "Akveo",
     "description": ""
   },

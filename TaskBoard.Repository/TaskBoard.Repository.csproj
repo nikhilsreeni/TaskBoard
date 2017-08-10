@@ -78,7 +78,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\HelperService.cs" />
     <Compile Include="ElasticSearchContext.cs" />
     <Compile Include="MongoDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

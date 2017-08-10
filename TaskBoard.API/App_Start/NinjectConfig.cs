@@ -13,9 +13,10 @@ namespace TaskBoard.API.App_Start
     using Ninject.Web.Common;
     using Service.User;
     using Repository;
-    using Service.Backlog;    /// <summary>
-                              /// Bootstrapper for the application.
-                              /// </summary>
+    using Service.Backlog;
+    using Repository.Repository;/// <summary>
+                                /// Bootstrapper for the application.
+                                /// </summary>
     public static class NinjectConfig
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();
@@ -63,6 +64,7 @@ namespace TaskBoard.API.App_Start
             kernel.Bind(typeof(IRepository<>)).To(typeof(EntityFrameworkRepository<>)).InRequestScope();
             kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InSingletonScope();
             kernel.Bind<IBacklogService>().To<BacklogService>().InSingletonScope();
+            kernel.Bind<IMongoDbRepository>().To<MongoDBRepository>().InSingletonScope();
         }
     }
 }

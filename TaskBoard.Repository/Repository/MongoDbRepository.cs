@@ -1,13 +1,4 @@
-﻿using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
-using MongoDB.Bson;
-using TaskBoard.Model;
-using TaskBoard.Repository.Repository.Services;
-using MongoDB.Driver.Linq;
-using System.Linq;
+﻿using MongoDB.Driver.Linq;
 
 namespace TaskBoard.Repository.Repository
 {

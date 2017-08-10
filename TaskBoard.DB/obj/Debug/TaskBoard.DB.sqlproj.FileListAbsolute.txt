@@ -3,3 +3,12 @@ D:\RandD\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.dll
 D:\RandD\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.pdb
 D:\RandD\TaskBoard\TaskBoard.DB\obj\Debug\TaskBoard.DB.dll
 D:\RandD\TaskBoard\TaskBoard.DB\obj\Debug\TaskBoard.DB.pdb
+D:\!GIT\TaskBoard\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.dacpac
+D:\!GIT\TaskBoard\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.dll
+D:\!GIT\TaskBoard\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.pdb
+D:\!GIT\TaskBoard\TaskBoard\TaskBoard.DB\obj\Debug\TaskBoard.DB.dll
+D:\!GIT\TaskBoard\TaskBoard\TaskBoard.DB\obj\Debug\TaskBoard.DB.pdb
+D:\!GIT\TaskBoard\TaskBoard\TaskBoard.DB\obj\Debug\Model.xml
+D:\!GIT\TaskBoard\TaskBoard\TaskBoard.DB\obj\Debug\refactor.xml
+D:\!GIT\TaskBoard\TaskBoard\TaskBoard.DB\obj\Debug\postdeploy.sql
+D:\!GIT\TaskBoard\TaskBoard\TaskBoard.DB\obj\Debug\predeploy.sql

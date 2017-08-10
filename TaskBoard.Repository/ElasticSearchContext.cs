@@ -13,9 +13,6 @@ namespace TaskBoard.Repository
         ElasticClient client = null;
         public ElasticSearchContext()
         {
-            //var pool = new SniffingConnectionPool(new[] { new Uri("http://localhost:9200") });
-            //var lowLevelClient = new ElasticsearchClient(new ConnectionConfiguration(pool));
-            //var lowLevelResponse = lowLevelClient.IndicesExists<dynamic>("foo");
             var uri = new Uri("http://localhost:9200");
             var settings = new ConnectionSettings(uri).BasicAuthentication("elastic", "changeme");
 
@@ -74,8 +71,6 @@ namespace TaskBoard.Repository
 
             client.Index(model);
         }
-
-       
     }
 
 }

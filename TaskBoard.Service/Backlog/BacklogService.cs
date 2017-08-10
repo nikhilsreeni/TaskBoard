@@ -11,8 +11,13 @@ namespace TaskBoard.Service.Backlog
     public class BacklogService : IBacklogService
     {
 
-        private readonly MongoDBRepository _mongoDBRepository;
+        private readonly IMongoDbRepository _mongoDBRepository;
 
+        public BacklogService(IMongoDbRepository MongoDbRepository)
+        {
+            _mongoDBRepository = MongoDbRepository;
+        }
+        
         public BacklogService()
         {
             _mongoDBRepository = new MongoDBRepository();

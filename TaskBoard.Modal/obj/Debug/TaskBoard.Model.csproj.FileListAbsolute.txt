@@ -31,3 +31,4 @@ D:\!GIT\TaskBoard\TaskBoard\TaskBoard.Modal\bin\Debug\MongoDB.Driver.xml
 D:\!GIT\TaskBoard\TaskBoard\TaskBoard.Modal\bin\Debug\MongoDB.Driver.Core.xml
 D:\!GIT\TaskBoard\TaskBoard\TaskBoard.Modal\obj\Debug\TaskBoard.Model.dll
 D:\!GIT\TaskBoard\TaskBoard\TaskBoard.Modal\obj\Debug\TaskBoard.Model.pdb
+D:\!GIT\TaskBoard\TaskBoard\TaskBoard.Modal\obj\Debug\TaskBoard.Model.csprojResolveAssemblyReference.cache

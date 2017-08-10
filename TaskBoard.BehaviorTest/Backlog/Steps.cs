@@ -1,6 +1,8 @@
 ﻿using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using TaskBoard.BehaviorTest.Common;
 using TaskBoard.Repository.Repository;
 using TechTalk.SpecFlow;
 
@@ -25,11 +27,16 @@ namespace TaskBoard.BehaviorTest.Backlog
         }
 
         [When(@"I press add")]
-        public void WhenIPressAdd()
+        public  void WhenIPressAdd()
         {
-            mongoDBRepository.Add(new Model.Backlog { Epic = new List<Model.Epic> { new Model.Epic { Title = "Epic 3" } }, Id = Guid.NewGuid() });
+            string[] nameList = { "Raju", "Ravi", "Soman" };
+            string randamName = nameList.ToList().PickRandom();
+             mongoDBRepository.Add(
+                new Model.Backlog { Epic = 
+                new List<Model.Epic> {
+                new Model.Epic { Title = randamName } }, Id = Guid.NewGuid() });
         }
-        
+
         [Then(@"the result should be (.*) on the screen")]
         public async void  ThenTheResultShouldBeOnTheScreen(int p0)
         {

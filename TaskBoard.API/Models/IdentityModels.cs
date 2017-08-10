@@ -29,5 +29,7 @@ namespace TaskBoard.API.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<TaskBoard.API.Models.Comment> Comments { get; set; }
     }
 }

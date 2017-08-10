@@ -12,13 +12,14 @@
     "share_on_google_plus": "Share on Google Plus"
   },
   "general": {
-    "akveo": "Akveo",
+    "pits": "PIT Solutions",
     "home": "Home",
     "forms": {
       "option1": "Option 1"
     },
     "menu": {
       "dashboard": "Dashboard",
+      "backlog":"Backlog",
       "editors": "Editors",
       "ck_editor": "CKEditor",
       "components": "Components",

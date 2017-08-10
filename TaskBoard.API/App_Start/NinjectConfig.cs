@@ -64,7 +64,7 @@ namespace TaskBoard.API.App_Start
             kernel.Bind(typeof(IRepository<>)).To(typeof(EntityFrameworkRepository<>)).InRequestScope();
             kernel.Bind<IUnitOfWork>().To<UnitOfWork>().InSingletonScope();
             kernel.Bind<IBacklogService>().To<BacklogService>().InSingletonScope();
-            kernel.Bind<IMongoDbRepository>().To<MongoDBRepository>().InSingletonScope();
+            kernel.Bind<IMongoDbRepository>().To<MongoDBRepository>();
         }
     }
 }

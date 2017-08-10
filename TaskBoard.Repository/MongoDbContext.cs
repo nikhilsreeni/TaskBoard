@@ -2,6 +2,7 @@
 using MongoDB.Driver.Linq;
 using System.Configuration;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace TaskBoard.Repository.Repository
 {
@@ -29,7 +30,7 @@ namespace TaskBoard.Repository.Repository
         {
             _database.GetCollection<TEntity>(typeof(TEntity).Name).InsertOne(entity);
         }
-        public async void AddCollectionAsync<TEntity>(TEntity entity)
+        public async Task AddCollectionAsync<TEntity>(TEntity entity)
         {
             await _database.GetCollection<TEntity>(typeof(TEntity).Name).InsertOneAsync(entity);
         }

@@ -86,6 +86,7 @@
     <Compile Include="Repository\IMongoDbRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\MongoDbRepository.cs" />
+    <Compile Include="Repository\TEntity.cs" />
     <Compile Include="Repository\_MongoDBRepository.cs" />
     <Compile Include="TaskBoardContext.cs" />
     <Compile Include="UnityOfWork\IUnitOfWork.cs" />

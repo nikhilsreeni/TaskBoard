@@ -1,4 +1,5 @@
 ﻿using MongoDB.Driver.Linq;
+using System.Threading.Tasks;
 
 namespace TaskBoard.Repository.Repository
 {
@@ -7,9 +8,9 @@ namespace TaskBoard.Repository.Repository
 
         private MongoDbContext _mongoDbContext = null;
 
-        public MongoDBRepository(MongoDbContext mongoDbContext = null)
+        public MongoDBRepository()
         {
-            _mongoDbContext = mongoDbContext != null ? mongoDbContext : new MongoDbContext();
+            _mongoDbContext =  new MongoDbContext();
         }
 
         /// <summary>
@@ -21,10 +22,13 @@ namespace TaskBoard.Repository.Repository
         {
             return _mongoDbContext.GetCollection<TEntity>();
         }
-
-        public void Add<TEntity>(TEntity entity) where TEntity : class, new()
+        public void Add<TEntity>(TEntity entity)
         {
-            _mongoDbContext.AddCollectionAsync(entity);
+            _mongoDbContext.AddToCollection(entity);
+        }
+        public async Task AddAsyc<TEntity>(TEntity entity)
+        {
+            await _mongoDbContext.AddCollectionAsync(entity);
         }
     }
 }

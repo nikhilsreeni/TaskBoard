@@ -4,12 +4,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using TaskBoard.Model;
 using TaskBoard.Service.Backlog;
 
 namespace TaskBoard.API.Controllers
 {
+    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     public class BacklogController : ApiController
     {
         IBacklogService _backlogService;

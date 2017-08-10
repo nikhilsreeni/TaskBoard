@@ -32,10 +32,10 @@ import { Component } from '@angular/core';
                     </div>
                   </div>
                </div>
-             `
+             `,
 })
 export class HandsontableSectionComponent {
-    currentHeading:string = 'Basic';
+    currentHeading: string = 'Basic';
  
 select(e) {
     if (e.heading) {

@@ -97,6 +97,7 @@
     <Compile Include="Backlog\Steps.cs" />
     <Compile Include="Common\ICacheStorage.cs" />
     <Compile Include="Common\FeatureConetxtCacheStorage.cs" />
+    <Compile Include="Common\ListExtension.cs" />
     <Compile Include="Common\ScenarioConetxtCacheStorage.cs" />
     <Compile Include="Features\Backlog\Backlog.feature.cs">
       <AutoGen>True</AutoGen>

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TaskBoard.Model;
 using TaskBoard.Repository;
+using TaskBoard.Repository.Interface;
+using TaskBoard.Service.Interface.User;
 
 namespace TaskBoard.Service.User
 {

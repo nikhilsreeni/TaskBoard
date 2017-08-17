@@ -8,6 +8,7 @@ using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using TaskBoard.Model;
 using TaskBoard.Service.Backlog;
+using TaskBoard.Service.Interface.Backlog;
 
 namespace TaskBoard.API.Controllers
 {

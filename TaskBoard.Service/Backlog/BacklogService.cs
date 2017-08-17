@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TaskBoard.Model;
-using TaskBoard.Repository.Repository;
+using TaskBoard.Repository.Interface;
+using TaskBoard.Service.Interface.Backlog;
 
 namespace TaskBoard.Service.Backlog
 {
@@ -20,7 +21,7 @@ namespace TaskBoard.Service.Backlog
         
         public BacklogService()
         {
-            _mongoDBRepository = new MongoDBRepository();
+            // _mongoDBRepository = new MongoDBRepository();
         }
         public void Add(Model.Backlog backlog)
         {

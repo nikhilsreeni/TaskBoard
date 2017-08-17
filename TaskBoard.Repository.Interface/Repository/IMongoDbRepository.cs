@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TaskBoard.Model;
 
-namespace TaskBoard.Repository.Repository
+namespace TaskBoard.Repository.Interface
 {
     public interface IMongoDbRepository
     {

@@ -1,5 +1,7 @@
 ﻿using MongoDB.Driver;
 using MongoDB.Driver.Linq;
+using Nest;
+using System;
 using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
@@ -34,12 +36,12 @@ namespace TaskBoard.Repository.Repository
         {
             await _database.GetCollection<TEntity>(typeof(TEntity).Name).InsertOneAsync(entity);
         }
-        public async void UpdateEntity<TEntity>(TEntity entity)
+        public async Task UpdateEntity<TEntity>(Guid Id, TEntity entity)
         {
-
-            var filter = Builders<TEntity>.Filter.Eq("name", "Juni");
+            var filter = Builders<TEntity>.Filter.Eq("id", "Juni");
             var update = Builders<TEntity>.Update.Set("cuisine", "American (New)").CurrentDate("lastModified");
             var result = await _database.GetCollection<TEntity>(typeof(TEntity).Name).UpdateOneAsync(filter, update);
         }
     }
+   
 }

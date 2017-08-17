@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using TaskBoard.Model;
 
-namespace TaskBoard.Service.User
+namespace TaskBoard.Service.Interface.User
 {
     public interface IUserService
     {

@@ -398,3 +398,7 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\ko\System.Spatial.resources.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\ru\System.Spatial.resources.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\zh-Hans\System.Spatial.resources.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\zh-Hant\System.Spatial.resources.dll
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Repository.Interface.dll
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Service.Interface.dll
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Repository.Interface.pdb
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Service.Interface.pdb

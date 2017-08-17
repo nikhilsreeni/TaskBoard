@@ -2,6 +2,8 @@
 using System;
 using TaskBoard.BehaviorTest.Common;
 using TaskBoard.Repository;
+using TaskBoard.Repository.Interface;
+using TaskBoard.Service.Interface.User;
 using TaskBoard.Service.User;
 using TechTalk.SpecFlow;
 

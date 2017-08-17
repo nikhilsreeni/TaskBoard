@@ -14,9 +14,12 @@ namespace TaskBoard.API.App_Start
     using Service.User;
     using Repository;
     using Service.Backlog;
-    using Repository.Repository;/// <summary>
-                                /// Bootstrapper for the application.
-                                /// </summary>
+    using Repository.Repository;
+    using Service.Interface.User;
+    using Repository.Interface;
+    using Service.Interface.Backlog;/// <summary>
+                                    /// Bootstrapper for the application.
+                                    /// </summary>
     public static class NinjectConfig
     {
         private static readonly Bootstrapper bootstrapper = new Bootstrapper();

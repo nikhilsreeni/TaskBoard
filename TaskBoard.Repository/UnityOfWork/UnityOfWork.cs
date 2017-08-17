@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaskBoard.Repository.Interface;
 
 namespace TaskBoard.Repository
 {
@@ -16,11 +17,11 @@ namespace TaskBoard.Repository
     {
         #region Private member variables...
         private readonly TaskBoardContext _context = new TaskBoardContext();
-        private EntityFrameworkRepository<User> _userRepository;
+        private IRepository<User> _userRepository;
         #endregion
 
         #region Public Repository Creation properties...
-        public EntityFrameworkRepository<User> UserRepository
+        public IRepository<User> UserRepository
         {
             get
             {

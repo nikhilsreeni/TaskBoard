@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TaskBoard.Model;
+using TaskBoard.Repository.Interface;
 
 namespace TaskBoard.Repository.Repository
 {
-    public class ElasticSearchRepository
+    public class ElasticSearchRepository : IElasticSearchRepository
     {
         private ElasticSearchContext _elasticSearchContext = null;
 

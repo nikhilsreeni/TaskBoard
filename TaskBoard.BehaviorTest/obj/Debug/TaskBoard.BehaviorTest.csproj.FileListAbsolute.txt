@@ -99,3 +99,7 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\Elasticsearch.Net.xm
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\obj\Debug\TaskBoard.BehaviorTest.csprojResolveAssemblyReference.cache
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\obj\Debug\TaskBoard.BehaviorTest.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\obj\Debug\TaskBoard.BehaviorTest.pdb
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Repository.Interface.dll
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Service.Interface.dll
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Repository.Interface.pdb
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Service.Interface.pdb

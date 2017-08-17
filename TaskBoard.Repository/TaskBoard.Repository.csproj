@@ -83,19 +83,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\ElasticSearchRepository.cs" />
     <Compile Include="Repository\EntityFrameworkRepository.cs" />
-    <Compile Include="Repository\IMongoDbRepository.cs" />
-    <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\MongoDbRepository.cs" />
     <Compile Include="Repository\TEntity.cs" />
     <Compile Include="Repository\_MongoDBRepository.cs" />
     <Compile Include="TaskBoardContext.cs" />
-    <Compile Include="UnityOfWork\IUnitOfWork.cs" />
     <Compile Include="UnityOfWork\UnityOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TaskBoard.Modal\TaskBoard.Model.csproj">
       <Project>{222295e9-1b33-4a81-87b8-5a4d52d677ba}</Project>
       <Name>TaskBoard.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskBoard.Repository.Interface\TaskBoard.Repository.Interface.csproj">
+      <Project>{00ebbffa-847f-48c7-9ce9-68aebba99842}</Project>
+      <Name>TaskBoard.Repository.Interface</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

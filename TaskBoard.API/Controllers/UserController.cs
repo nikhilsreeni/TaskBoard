@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using TaskBoard.Service.Interface.User;
 using TaskBoard.Service.User;
 
 namespace TaskBoard.API.Controllers

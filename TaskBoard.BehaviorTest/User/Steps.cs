@@ -6,6 +6,8 @@ using Ninject;
 using TaskBoard.Service.User;
 using TaskBoard.Repository;
 using TaskBoard.BehaviorTest.Common;
+using TaskBoard.Service.Interface.User;
+using TaskBoard.Repository.Interface;
 
 namespace TaskBoard.BehaviorTest.User
 {

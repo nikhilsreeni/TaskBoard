@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TaskBoard.Service.Backlog
+namespace TaskBoard.Service.Interface.Backlog
 {
     public interface IBacklogService
     {

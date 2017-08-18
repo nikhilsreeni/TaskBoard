@@ -46,8 +46,6 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\MongoDB.Bson.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\MongoDB.Driver.Core.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\MongoDB.Driver.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\TaskBoard.Model.dll
-D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\TaskBoard.Model.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\MongoDB.Bson.xml
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\MongoDB.Driver.xml
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\MongoDB.Driver.Core.xml
@@ -58,3 +56,5 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\TaskBoard.Repository.Inte
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\TaskBoard.Service.Interface.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\TaskBoard.Repository.Interface.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\TaskBoard.Service.Interface.pdb
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\TaskBoard.PersistenceModel.dll
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.Service\bin\Debug\TaskBoard.PersistenceModel.pdb

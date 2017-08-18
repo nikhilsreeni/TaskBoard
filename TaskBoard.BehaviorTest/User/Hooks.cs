@@ -38,7 +38,7 @@ namespace TaskBoard.BehaviorTest.User
         [AfterScenario]
         public void AfterScenario()
         {
-            Model.User user = _cacheStorage.Retrieve<Model.User>("User");
+            PersistenceModel.User user = _cacheStorage.Retrieve<PersistenceModel.User>("User");
             _userService.Delete(user.UserID);
             _unitOfWork.Save();
         }

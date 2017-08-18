@@ -1,15 +1,8 @@
-﻿using MongoDB.Bson;
-using MongoDB.Bson.Serialization;
-using MongoDB.Bson.Serialization.Attributes;
-using MongoDB.Bson.Serialization.IdGenerators;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TaskBoard.PersistenceModel
+
+namespace TaskBoard.DoaminModel
 {
     public class Task
     {
@@ -42,21 +35,8 @@ namespace TaskBoard.PersistenceModel
 
     public class Backlog
     {
-        [BsonId(IdGenerator = typeof(GuidIdGenerator))]
         public Guid Id { get; set; }
 
         public List<Epic> Epic { get; set; }
-    }
-
-    public class GuidIdGenerator : IIdGenerator
-    {
-        public object GenerateId(object container, object document)
-        {
-            return  Guid.NewGuid();
-        }
-        public bool IsEmpty(object id)
-        {
-            return string.IsNullOrEmpty(id.ToString());
-        }
     }
 }

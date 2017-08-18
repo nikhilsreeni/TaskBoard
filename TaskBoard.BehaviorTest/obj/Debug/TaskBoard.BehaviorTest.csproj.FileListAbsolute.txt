@@ -77,13 +77,11 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\Newtonsoft.Json.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\Ninject.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\nunit.framework.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Model.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Repository.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Service.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TechTalk.SpecFlow.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\Nest.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\Elasticsearch.Net.dll
-D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Model.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Repository.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Service.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\EntityFramework.xml
@@ -103,3 +101,5 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Repository
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Service.Interface.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Repository.Interface.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.Service.Interface.pdb
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.PersistenceModel.dll
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.BehaviorTest\bin\Debug\TaskBoard.PersistenceModel.pdb

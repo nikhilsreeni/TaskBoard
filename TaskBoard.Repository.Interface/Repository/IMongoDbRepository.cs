@@ -3,7 +3,7 @@ using MongoDB.Driver.Linq;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TaskBoard.Model;
+using TaskBoard.PersistenceModel;
 
 namespace TaskBoard.Repository.Interface
 {

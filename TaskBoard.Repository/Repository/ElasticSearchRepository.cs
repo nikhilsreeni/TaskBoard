@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TaskBoard.Model;
+using TaskBoard.PersistenceModel;
 using TaskBoard.Repository.Interface;
 
 namespace TaskBoard.Repository.Repository

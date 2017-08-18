@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TaskBoard.Model;
+using TaskBoard.PersistenceModel;
 using TaskBoard.Repository.Interface;
 using TaskBoard.Service.Interface.Backlog;
 
@@ -23,7 +23,7 @@ namespace TaskBoard.Service.Backlog
         {
             // _mongoDBRepository = new MongoDBRepository();
         }
-        public void Add(Model.Backlog backlog)
+        public void Add(PersistenceModel.Backlog backlog)
         {
             throw new NotImplementedException();
         }
@@ -33,10 +33,10 @@ namespace TaskBoard.Service.Backlog
             throw new NotImplementedException();
         }
 
-        public IQueryable<Model.Backlog> Get()
+        public IQueryable<PersistenceModel.Backlog> Get()
         {
-            return _mongoDBRepository.GetAll<Model.Backlog>();
-            //return _mongoDBRepository.GetBacklog() as IEnumerable<Model.Backlog>;
+            return _mongoDBRepository.GetAll<PersistenceModel.Backlog>();
+            //return _mongoDBRepository.GetBacklog() as IEnumerable<PersistenceModel.Backlog>;
         }
     }
 }

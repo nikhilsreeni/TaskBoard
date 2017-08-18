@@ -17,9 +17,9 @@ namespace TaskBoard.BehaviorTest.Backlog
         public async void GivenIHaveEnteredIntoTheCalculator(int p0)
         {
            
-            var xx = await mongoDBRepository.GetAll<Model.Backlog>().ToListAsync();
+            var xx = await mongoDBRepository.GetAll<PersistenceModel.Backlog>().ToListAsync();
 
-            //var cc = await mongoDBRepository.GetAll<Model.Backlog>();
+            //var cc = await mongoDBRepository.GetAll<PersistenceModel.Backlog>();
 
             //var myTypes = await mongoDBRepository.GetFiltered(t => t.Id != 1 as object).ToListAsync();
 
@@ -32,15 +32,15 @@ namespace TaskBoard.BehaviorTest.Backlog
             string[] nameList = { "Raju", "Ravi", "Soman" };
             string randamName = nameList.ToList().PickRandom();
              mongoDBRepository.Add(
-                new Model.Backlog { Epic = 
-                new List<Model.Epic> {
-                new Model.Epic { Title = randamName } }, Id = Guid.NewGuid() });
+                new PersistenceModel.Backlog { Epic = 
+                new List<PersistenceModel.Epic> {
+                new PersistenceModel.Epic { Title = randamName } }, Id = Guid.NewGuid() });
         }
 
         [Then(@"the result should be (.*) on the screen")]
         public async void  ThenTheResultShouldBeOnTheScreen(int p0)
         {
-            var xx = await mongoDBRepository.GetAll<Model.Backlog>().ToListAsync();
+            var xx = await mongoDBRepository.GetAll<PersistenceModel.Backlog>().ToListAsync();
         }
 
 
@@ -52,9 +52,9 @@ namespace TaskBoard.BehaviorTest.Backlog
 
             ElasticSearchRepository ElasticSearchRepository = new ElasticSearchRepository();
 
-            ElasticSearchRepository.AddNewIndex(new Model.Backlog { Epic = new List<Model.Epic> { new Model.Epic { Title = "Epic 1" } }, Id = Guid.NewGuid() });
-            ElasticSearchRepository.AddNewIndex(new Model.Backlog { Epic = new List<Model.Epic> { new Model.Epic { Title = "Epic 2" } }, Id = Guid.NewGuid() });
-            ElasticSearchRepository.AddNewIndex(new Model.Backlog { Epic = new List<Model.Epic> { new Model.Epic { Title = "Epic 3" } }, Id = Guid.NewGuid() });
+            ElasticSearchRepository.AddNewIndex(new PersistenceModel.Backlog { Epic = new List<PersistenceModel.Epic> { new PersistenceModel.Epic { Title = "Epic 1" } }, Id = Guid.NewGuid() });
+            ElasticSearchRepository.AddNewIndex(new PersistenceModel.Backlog { Epic = new List<PersistenceModel.Epic> { new PersistenceModel.Epic { Title = "Epic 2" } }, Id = Guid.NewGuid() });
+            ElasticSearchRepository.AddNewIndex(new PersistenceModel.Backlog { Epic = new List<PersistenceModel.Epic> { new PersistenceModel.Epic { Title = "Epic 3" } }, Id = Guid.NewGuid() });
         }
 
         [When(@"I save the backlog")]

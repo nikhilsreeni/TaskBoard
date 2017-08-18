@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using System.Web.Http.Description;
-using TaskBoard.Model;
+using TaskBoard.PersistenceModel;
 using TaskBoard.Service.Backlog;
 using TaskBoard.Service.Interface.Backlog;
 
@@ -24,7 +24,7 @@ namespace TaskBoard.API.Controllers
 
         // GET: api/Backlog
         [ResponseType(typeof(Backlog))]
-        public IQueryable<Model.Backlog> Get()
+        public IQueryable<PersistenceModel.Backlog> Get()
         {
             return _backlogService.Get(); 
         }

@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TaskBoard.PersistenceModel")]
+[assembly: AssemblyTitle("TaskBoard.Model")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("222295e9-1b33-4a81-87b8-5a4d52d677ba")]
+[assembly: Guid("e426603b-7f20-4145-8d61-04e600299098")]
 
 // Version information for an assembly consists of the following four values:
 //

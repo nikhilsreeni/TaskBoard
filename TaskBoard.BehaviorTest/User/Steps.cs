@@ -39,7 +39,7 @@ namespace TaskBoard.BehaviorTest.User
         [Given(@"User details with username as (.*), password as (.*) and  dateofbirth as (.*)"), Scope(Tag = "UserHooks")]
         public void GivenUserDetailsWithUsernameAsTestPasswordAsTestpassAndDateOfBirthAs(string username, string password, string dateofbirth)
         {
-            var NewUser = new Model.User
+            var NewUser = new PersistenceModel.User
             {
                 UserID = Guid.NewGuid(),
                 UserName = username,

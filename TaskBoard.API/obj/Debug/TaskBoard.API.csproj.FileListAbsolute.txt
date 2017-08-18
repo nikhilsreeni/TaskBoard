@@ -298,7 +298,6 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\System.Web.Razor.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\System.Web.WebPages.Deployment.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\System.Web.WebPages.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\System.Web.WebPages.Razor.dll
-D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Model.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Repository.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Service.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\WebActivatorEx.dll
@@ -309,7 +308,6 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\MongoDB.Driver.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\Elasticsearch.Net.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\MongoDB.Driver.Core.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Model.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Repository.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Service.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\Microsoft.AI.DependencyCollector.xml
@@ -402,3 +400,5 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Repository.Interface.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Service.Interface.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Repository.Interface.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.Service.Interface.pdb
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.PersistenceModel.dll
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.API\bin\TaskBoard.PersistenceModel.pdb

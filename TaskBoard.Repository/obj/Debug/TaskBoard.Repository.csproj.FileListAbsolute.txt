@@ -55,9 +55,7 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\MongoDB.Driver.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\Nest.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\Newtonsoft.Json.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\TaskBoard.Model.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\TaskBoard.Repository.Interface.dll
-D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\TaskBoard.Model.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\TaskBoard.Repository.Interface.pdb
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\Elasticsearch.Net.xml
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\EntityFramework.xml
@@ -69,3 +67,5 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\Nest.xml
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\Newtonsoft.Json.xml
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\obj\Debug\TaskBoard.Repository.dll
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\obj\Debug\TaskBoard.Repository.pdb
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\TaskBoard.PersistenceModel.dll
+D:\GIT\TaskBoard\TaskBoard\TaskBoard.Repository\bin\Debug\TaskBoard.PersistenceModel.pdb

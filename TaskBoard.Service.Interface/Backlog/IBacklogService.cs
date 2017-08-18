@@ -8,8 +8,8 @@ namespace TaskBoard.Service.Interface.Backlog
 {
     public interface IBacklogService
     {
-        IQueryable<Model.Backlog> Get();
-        void Add(Model.Backlog backlog);
+        IQueryable<PersistenceModel.Backlog> Get();
+        void Add(PersistenceModel.Backlog backlog);
         void Delete(Guid UserID);
     }
 }

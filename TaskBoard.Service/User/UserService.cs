@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TaskBoard.Model;
+using TaskBoard.PersistenceModel;
 using TaskBoard.Repository;
 using TaskBoard.Repository.Interface;
 using TaskBoard.Service.Interface.User;
@@ -18,7 +18,7 @@ namespace TaskBoard.Service.User
             _unitOfWork = unitOfWork;
         }
 
-        public void Add(Model.User user)
+        public void Add(PersistenceModel.User user)
         {
             _unitOfWork.UserRepository.Add(user);
         }
@@ -28,14 +28,14 @@ namespace TaskBoard.Service.User
             _unitOfWork.UserRepository.Delete(UserID);
         }
 
-        public IEnumerable<Model.User> Get()
+        public IEnumerable<PersistenceModel.User> Get()
         {
             var users = _unitOfWork.UserRepository.GetAll().ToList();
             if (users.Any())
             {
                 return users;
             }
-            return Enumerable.Empty<Model.User>();
+            return Enumerable.Empty<PersistenceModel.User>();
         }
     }
 }

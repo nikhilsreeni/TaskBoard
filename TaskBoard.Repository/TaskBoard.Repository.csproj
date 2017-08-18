@@ -90,9 +90,9 @@
     <Compile Include="UnityOfWork\UnityOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaskBoard.Modal\TaskBoard.Model.csproj">
+    <ProjectReference Include="..\TaskBoard.Modal\TaskBoard.PersistenceModel.csproj">
       <Project>{222295e9-1b33-4a81-87b8-5a4d52d677ba}</Project>
-      <Name>TaskBoard.Model</Name>
+      <Name>TaskBoard.PersistenceModel</Name>
     </ProjectReference>
     <ProjectReference Include="..\TaskBoard.Repository.Interface\TaskBoard.Repository.Interface.csproj">
       <Project>{00ebbffa-847f-48c7-9ce9-68aebba99842}</Project>

@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using TaskBoard.Model;
+using TaskBoard.PersistenceModel;
 
 namespace TaskBoard.Service.Interface.User
 {
     public interface IUserService
     {
-        IEnumerable<Model.User> Get();
-        void Add(Model.User user);
+        IEnumerable<PersistenceModel.User> Get();
+        void Add(PersistenceModel.User user);
         void Delete(Guid UserID);
     }
 }

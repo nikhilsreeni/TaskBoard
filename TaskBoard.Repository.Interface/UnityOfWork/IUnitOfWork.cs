@@ -1,6 +1,6 @@
 ﻿namespace TaskBoard.Repository.Interface
 {
-    using TaskBoard.Model;
+    using TaskBoard.PersistenceModel;
     public interface IUnitOfWork
     {
         #region Properties

@@ -1,7 +1,7 @@
 namespace TaskBoard.Repository
 {
     using System.Data.Entity;
-    using Model;
+    using PersistenceModel;
     public partial class TaskBoardContext : DbContext
     {
         public TaskBoardContext()

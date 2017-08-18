@@ -16,12 +16,12 @@ namespace TaskBoard.API.Controllers
         {
             _userService = userService;
         }
-        public IEnumerable<Model.User> Get()
+        public IEnumerable<PersistenceModel.User> Get()
         {
             return _userService.Get();
         }
 
-        public void Add(Model.User user)
+        public void Add(PersistenceModel.User user)
         {
             _userService.Add(user);
         }

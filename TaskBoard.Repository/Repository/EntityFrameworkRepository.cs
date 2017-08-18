@@ -1,6 +1,6 @@
 ﻿#region Using Namespaces...
 
-using TaskBoard.Model;
+using TaskBoard.PersistenceModel;
 using System;
 using System.Collections.Generic;
 using System.Data;

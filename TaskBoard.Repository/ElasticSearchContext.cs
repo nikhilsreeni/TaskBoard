@@ -4,7 +4,7 @@ using Nest;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using TaskBoard.Model;
+using TaskBoard.PersistenceModel;
 
 namespace TaskBoard.Repository
 {

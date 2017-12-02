@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'select-inputs',
-  styleUrls: ['./selectInput.scss'],
-  templateUrl: './selectInputs.html'
+    selector: "select-inputs",
+    styleUrls: ["./selectInput.scss"],
+    templateUrl: "./selectInputs.html"
 })
 export class SelectInputs {
-  constructor() { }
+    constructor() {}
 }

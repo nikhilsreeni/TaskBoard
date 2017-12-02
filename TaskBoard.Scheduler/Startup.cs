@@ -1,8 +1,10 @@
 ﻿using Hangfire;
 using Microsoft.Owin;
 using Owin;
+using TaskBoard.Scheduler;
 
-[assembly: OwinStartup(typeof(TaskBoard.Scheduler.Startup))]
+[assembly: OwinStartup(typeof (Startup))]
+
 namespace TaskBoard.Scheduler
 {
     public class Startup

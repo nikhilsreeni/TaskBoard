@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaskBoard.PersistenceModel;
-using TaskBoard.Repository;
 using TaskBoard.Repository.Interface;
 using TaskBoard.Service.Interface.User;
 
@@ -13,6 +9,7 @@ namespace TaskBoard.Service.User
     public class UserService : IUserService
     {
         private readonly IUnitOfWork _unitOfWork;
+
         public UserService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;

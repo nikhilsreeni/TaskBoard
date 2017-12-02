@@ -1,1 +1,1 @@
-export * from './responsiveTable.component';
+export * from "./responsiveTable.component";

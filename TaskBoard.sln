@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TaskBoard.DB", "TaskBoard.DB\TaskBoard.DB.sqlproj", "{338B2E4C-F122-4854-83EF-195837F73DBA}"
 EndProject

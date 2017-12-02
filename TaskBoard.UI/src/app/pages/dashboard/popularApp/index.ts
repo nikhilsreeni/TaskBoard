@@ -1,1 +1,1 @@
-export * from './popularApp.component';
+export * from "./popularApp.component";

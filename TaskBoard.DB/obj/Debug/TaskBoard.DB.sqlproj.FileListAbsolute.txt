@@ -21,3 +21,8 @@ D:\GIT\TaskBoard\TaskBoard\TaskBoard.DB\obj\Debug\Model.xml
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.DB\obj\Debug\refactor.xml
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.DB\obj\Debug\postdeploy.sql
 D:\GIT\TaskBoard\TaskBoard\TaskBoard.DB\obj\Debug\predeploy.sql
+E:\ProjectRepository\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.dacpac
+E:\ProjectRepository\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.dll
+E:\ProjectRepository\TaskBoard\TaskBoard.DB\bin\Debug\TaskBoard.DB.pdb
+E:\ProjectRepository\TaskBoard\TaskBoard.DB\obj\Debug\TaskBoard.DB.dll
+E:\ProjectRepository\TaskBoard\TaskBoard.DB\obj\Debug\TaskBoard.DB.pdb

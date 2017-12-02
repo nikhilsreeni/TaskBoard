@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TechTalk.SpecFlow;
+﻿using TechTalk.SpecFlow;
 
 namespace TaskBoard.BehaviorTest.Common
 {
@@ -21,7 +16,7 @@ namespace TaskBoard.BehaviorTest.Common
 
         public T Retrieve<T>(string key)
         {
-            T itemsStored = FeatureContext.Current.Get<T>(key);
+            var itemsStored = FeatureContext.Current.Get<T>(key);
             if (itemsStored == null)
             {
                 itemsStored = default(T);

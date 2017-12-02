@@ -1,1 +1,1 @@
-export * from './slim.component';
+export * from "./slim.component";

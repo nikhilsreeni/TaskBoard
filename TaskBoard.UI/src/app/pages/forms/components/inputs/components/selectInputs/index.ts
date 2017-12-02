@@ -1,1 +1,1 @@
-export * from './selectInputs.component';
+export * from "./selectInputs.component";

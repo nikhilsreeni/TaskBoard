@@ -1,48 +1,41 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TaskBoard.Service.User;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Ninject;
-using TaskBoard.Service.Interface.User;
 using TaskBoard.Repository.Interface;
+using TaskBoard.Service.Interface.User;
+using TaskBoard.Service.User;
 
 namespace TaskBoard.Service.UserTests
 {
-    [TestClass()]
+    [TestClass]
     public class UserServiceTests
     {
-        private readonly StandardKernel _kernel = new StandardKernel();
-        IUserService _userService;
-        IUnitOfWork _unitOfWork;
+        private IUnitOfWork _unitOfWork;
+        private IUserService _userService;
 
-        public UserServiceTests()
+        [TestMethod]
+        public void UserServiceInstanceNullException()
         {
-
+            Assert.IsNotNull(new UserServiceTests());
         }
 
-        [TestMethod()]
-        public void UserServiceTest()
+        [TestMethod]
+        public void UserServiceInterfaceImplementation()
         {
-
-            Assert.IsInstanceOfType(new UserService(_unitOfWork), typeof(IUserService));
+            Assert.IsInstanceOfType(new UserService(_unitOfWork), typeof (IUserService));
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void AddTest()
         {
             Assert.Fail();
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void DeleteTest()
         {
             Assert.Fail();
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void GetTest()
         {
             Assert.Fail();

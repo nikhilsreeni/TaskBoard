@@ -1,1 +1,1 @@
-export * from './googleMaps.component';
+export * from "./googleMaps.component";

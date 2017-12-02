@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using TaskBoard.PersistenceModel;
 
 namespace TaskBoard.Service.Interface.User
 {

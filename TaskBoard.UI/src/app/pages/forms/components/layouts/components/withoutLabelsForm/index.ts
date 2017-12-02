@@ -1,1 +1,1 @@
-export * from './withoutLabelsForm.component';
+export * from "./withoutLabelsForm.component";

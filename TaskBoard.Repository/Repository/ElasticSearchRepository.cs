@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using TaskBoard.PersistenceModel;
 using TaskBoard.Repository.Interface;
 
@@ -10,7 +6,7 @@ namespace TaskBoard.Repository.Repository
 {
     public class ElasticSearchRepository : IElasticSearchRepository
     {
-        private ElasticSearchContext _elasticSearchContext = null;
+        private readonly ElasticSearchContext _elasticSearchContext;
 
         public ElasticSearchRepository(ElasticSearchContext elasticSearchContext = null)
         {
@@ -21,9 +17,10 @@ namespace TaskBoard.Repository.Repository
         {
             _elasticSearchContext.AddNewIndex(backlog);
         }
+
         public List<Backlog> GetResult()
         {
-           return _elasticSearchContext.GetResult();
+            return _elasticSearchContext.GetResult();
         }
     }
 }

@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseName>TaskBoard</TargetDatabaseName>
     <DeployScriptFileName>TaskBoard.DB.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source=PIA3232\sqlserver;Integrated Security=True;Pooling=False</TargetConnectionString>
+    <TargetConnectionString>Data Source=LAPTOP-BG1P9309\SQLEXPRESS;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True</TargetConnectionString>
     <ProfileVersionNumber>1</ProfileVersionNumber>
     <BlockWhenDriftDetected>False</BlockWhenDriftDetected>
     <RegisterDataTierApplication>True</RegisterDataTierApplication>

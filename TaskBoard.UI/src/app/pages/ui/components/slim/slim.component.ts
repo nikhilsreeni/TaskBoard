@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
-import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
+import { SlimLoadingBarService } from "ng2-slim-loading-bar";
 
 @Component({
-    selector: 'slim',
-    styleUrls: ['./slim.scss'],
-    templateUrl: './slim.html'
+    selector: "slim",
+    styleUrls: ["./slim.scss"],
+    templateUrl: "./slim.html"
 })
 export class SlimComponent {
 
@@ -17,7 +17,7 @@ export class SlimComponent {
 
     startProgress() {
         this.slimLoader.start(() => {
-            console.log('Loading complete');
+            console.log("Loading complete");
         });
     }
 
@@ -38,18 +38,18 @@ export class SlimComponent {
     }
 
     changeProgressTo4px() {
-        this.slimLoader.height = '4px';
+        this.slimLoader.height = "4px";
     }
 
     changeProgressTo2px() {
-        this.slimLoader.height = '2px';
+        this.slimLoader.height = "2px";
     }
 
     changeProgressToWhite() {
-        this.slimLoader.color = 'white';
+        this.slimLoader.color = "white";
     }
 
     changeProgressToGreen() {
-        this.slimLoader.color = 'green';
+        this.slimLoader.color = "green";
     }
 }

@@ -1,23 +1,14 @@
-﻿using Hangfire;
-using Microsoft.Owin.Hosting;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
+﻿using System;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TaskBoard.Scheduler
 {
-    partial class SchedulerService : ServiceBase
+    internal partial class SchedulerService : ServiceBase
     {
+        private readonly IDisposable _schedulerServer = null;
+        private readonly IDisposable _server = null;
 
         public string baseAddress = "http://localhost:12345";
-        private IDisposable _server = null;
-        private IDisposable _schedulerServer = null;
 
         public SchedulerService()
         {

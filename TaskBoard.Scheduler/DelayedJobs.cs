@@ -1,9 +1,5 @@
-﻿using Hangfire;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Hangfire;
 
 namespace TaskBoard.Scheduler
 {
@@ -16,5 +12,4 @@ namespace TaskBoard.Scheduler
                 TimeSpan.FromDays(7));
         }
     }
-
 }

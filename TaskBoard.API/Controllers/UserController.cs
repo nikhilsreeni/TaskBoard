@@ -1,30 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Collections.Generic;
 using System.Web.Http;
+using TaskBoard.PersistenceModel;
 using TaskBoard.Service.Interface.User;
-using TaskBoard.Service.User;
 
 namespace TaskBoard.API.Controllers
 {
     public class UserController : ApiController
     {
-        IUserService _userService;
+        private readonly IUserService _userService;
+
         public UserController(IUserService userService)
         {
             _userService = userService;
         }
-        public IEnumerable<PersistenceModel.User> Get()
+
+        public IEnumerable<User> Get()
         {
             return _userService.Get();
         }
 
-        public void Add(PersistenceModel.User user)
+        public void Add(User user)
         {
             _userService.Add(user);
         }
-
     }
 }

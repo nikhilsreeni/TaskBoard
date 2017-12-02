@@ -1,16 +1,15 @@
-﻿
-using Elasticsearch.Net;
-using Nest;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Nest;
 using TaskBoard.PersistenceModel;
 
 namespace TaskBoard.Repository
 {
     public class ElasticSearchContext
     {
-        ElasticClient client = null;
+        private readonly ElasticClient client;
+
         public ElasticSearchContext()
         {
             var uri = new Uri("http://localhost:9200");
@@ -18,8 +17,8 @@ namespace TaskBoard.Repository
 
             client = new ElasticClient(settings);
             settings.DefaultIndex("backlog");
-
         }
+
         public List<Backlog> GetResult()
         {
             if (client.IndexExists("backlog").Exists)
@@ -37,14 +36,14 @@ namespace TaskBoard.Repository
                 var query = condition;
 
                 return client.SearchAsync<Backlog>(s => s
-                .From(0)
-                .Take(10)
-                .Query(qry => qry
-                    .Bool(b => b
-                        .Must(m => m
-                            .QueryString(qs => qs
-                                .DefaultField("_all")
-                                .Query(query)))))).Result.Documents.ToList();
+                    .From(0)
+                    .Take(10)
+                    .Query(qry => qry
+                        .Bool(b => b
+                            .Must(m => m
+                                .QueryString(qs => qs
+                                    .DefaultField("_all")
+                                    .Query(query)))))).Result.Documents.ToList();
             }
             return null;
         }
@@ -53,9 +52,9 @@ namespace TaskBoard.Repository
         {
             //Create Index 
             client.CreateIndex("Backlog", c =>
-            c.Mappings(ms => ms.Map<Backlog>(m => m.AutoMap())));
+                c.Mappings(ms => ms.Map<Backlog>(m => m.AutoMap())));
 
-            var settings = new IndexSettings { NumberOfReplicas = 1, NumberOfShards = 2 };
+            var settings = new IndexSettings {NumberOfReplicas = 1, NumberOfShards = 2};
 
             var indexConfig = new IndexState
             {
@@ -65,12 +64,11 @@ namespace TaskBoard.Repository
             if (!client.IndexExists("backlog").Exists)
             {
                 client.CreateIndex("backlog", c => c
-                .InitializeUsing(indexConfig)
-                .Mappings(m => m.Map<Backlog>(mp => mp.AutoMap())));
+                    .InitializeUsing(indexConfig)
+                    .Mappings(m => m.Map<Backlog>(mp => mp.AutoMap())));
             }
 
             client.Index(model);
         }
     }
-
 }

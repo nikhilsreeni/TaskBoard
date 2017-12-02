@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 
 @Component({
-  selector: 'disabled-buttons',
-  templateUrl: './disabledButtons.html',
+    selector: "disabled-buttons",
+    templateUrl: "./disabledButtons.html",
 })
 export class DisabledButtons {
 
-  constructor() {
-  }
+    constructor() {
+    }
 }

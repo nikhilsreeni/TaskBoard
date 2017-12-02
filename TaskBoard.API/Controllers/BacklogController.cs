@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using TaskBoard.PersistenceModel;
-using TaskBoard.Service.Backlog;
 using TaskBoard.Service.Interface.Backlog;
 
 namespace TaskBoard.API.Controllers
 {
-    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
+    [EnableCors("http://localhost:4200", "*", "*")]
     public class BacklogController : ApiController
     {
-        IBacklogService _backlogService;
+        private readonly IBacklogService _backlogService;
 
         public BacklogController(IBacklogService backlogService)
         {
@@ -23,10 +18,10 @@ namespace TaskBoard.API.Controllers
         }
 
         // GET: api/Backlog
-        [ResponseType(typeof(Backlog))]
-        public IQueryable<PersistenceModel.Backlog> Get()
+        [ResponseType(typeof (Backlog))]
+        public IQueryable<Backlog> Get()
         {
-            return _backlogService.Get(); 
+            return _backlogService.Get();
         }
 
         // GET: api/Backlog/5
@@ -36,12 +31,12 @@ namespace TaskBoard.API.Controllers
         }
 
         // POST: api/Backlog
-        public void Post([FromBody]string value)
+        public void Post([FromBody] string value)
         {
         }
 
         // PUT: api/Backlog/5
-        public void Put(int id, [FromBody]string value)
+        public void Put(int id, [FromBody] string value)
         {
         }
 

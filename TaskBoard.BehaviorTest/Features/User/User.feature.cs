@@ -8,94 +8,100 @@
 //      the code is regenerated.
 //  </auto-generated>
 // ------------------------------------------------------------------------------
+
 #region Designer generated code
+
+using TechTalk.SpecFlow;
+
 #pragma warning disable
+
 namespace TaskBoard.BehaviorTest.Features.User
 {
-    using TechTalk.SpecFlow;
-    
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute()]
     public partial class UserManagementFunctionalitiesFeature
     {
-        
         private static TechTalk.SpecFlow.ITestRunner testRunner;
-        
-#line 1 "User.feature"
-#line hidden
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassInitializeAttribute()]
         public static void FeatureSetup(Microsoft.VisualStudio.TestTools.UnitTesting.TestContext testContext)
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner(null, 0);
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "User management functionalities", null, ProgrammingLanguage.CSharp, new string[] {
-                        "UserHooks"});
+            var featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"),
+                "User management functionalities", null, ProgrammingLanguage.CSharp, new string[]
+                {
+                    "UserHooks"
+                });
             testRunner.OnFeatureStart(featureInfo);
         }
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.ClassCleanupAttribute()]
         public static void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute()]
         public virtual void TestInitialize()
         {
-            if (((testRunner.FeatureContext != null) 
-                        && (testRunner.FeatureContext.FeatureInfo.Title != "User management functionalities")))
+            if (((testRunner.FeatureContext != null)
+                 && (testRunner.FeatureContext.FeatureInfo.Title != "User management functionalities")))
             {
-                global::TaskBoard.BehaviorTest.Features.User.UserManagementFunctionalitiesFeature.FeatureSetup(null);
+                FeatureSetup(null);
             }
         }
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
         }
-        
+
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
         }
-        
+
         public virtual void ScenarioCleanup()
         {
             testRunner.CollectScenarioErrors();
         }
-        
+
         public virtual void FeatureBackground()
         {
 #line 4
 #line 5
- testRunner.Given("Database connection is present", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            testRunner.Given("Database connection is present", ((string) (null)), ((TechTalk.SpecFlow.Table) (null)),
+                "Given ");
 #line hidden
         }
-        
+
         public virtual void UserInsertAndGet(string userName, string password, string dateOfBirth, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User Insert and Get", exampleTags);
+            var scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User Insert and Get", exampleTags);
 #line 8
-this.ScenarioSetup(scenarioInfo);
+            this.ScenarioSetup(scenarioInfo);
 #line 4
-this.FeatureBackground();
+            this.FeatureBackground();
 #line 9
-testRunner.Given(string.Format("User details with username as {0}, password as {1} and  dateofbirth as {2}", userName, password, dateOfBirth), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+            testRunner.Given(
+                string.Format("User details with username as {0}, password as {1} and  dateofbirth as {2}", userName,
+                    password, dateOfBirth), ((string) (null)), ((TechTalk.SpecFlow.Table) (null)), "Given ");
 #line 10
-testRunner.When("I save", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+            testRunner.When("I save", ((string) (null)), ((TechTalk.SpecFlow.Table) (null)), "When ");
 #line 11
-testRunner.Then("value shoud be saved to database", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+            testRunner.Then("value shoud be saved to database", ((string) (null)), ((TechTalk.SpecFlow.Table) (null)),
+                "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("User Insert and Get: test1")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "User management functionalities")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle",
+            "User management functionalities")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("UserHooks")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "test1")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:UserName", "test1")]
@@ -104,13 +110,14 @@ testRunner.Then("value shoud be saved to database", ((string)(null)), ((TechTalk
         public virtual void UserInsertAndGet_Test1()
         {
 #line 8
-this.UserInsertAndGet("test1", "test1pass", "21-11-1998", ((string[])(null)));
+            this.UserInsertAndGet("test1", "test1pass", "21-11-1998", ((string[]) (null)));
 #line hidden
         }
-        
+
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("User Insert and Get: test2")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "User management functionalities")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle",
+            "User management functionalities")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("UserHooks")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "test2")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:UserName", "test2")]
@@ -119,10 +126,12 @@ this.UserInsertAndGet("test1", "test1pass", "21-11-1998", ((string[])(null)));
         public virtual void UserInsertAndGet_Test2()
         {
 #line 8
-this.UserInsertAndGet("test2", "test2pass", "11-07-2012", ((string[])(null)));
+            this.UserInsertAndGet("test2", "test2pass", "11-07-2012", ((string[]) (null)));
 #line hidden
         }
     }
 }
+
 #pragma warning restore
+
 #endregion

@@ -1,1 +1,1 @@
-export * from './condensedTable.component';
+export * from "./condensedTable.component";

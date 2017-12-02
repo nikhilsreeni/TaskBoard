@@ -1,56 +1,41 @@
-﻿using MongoDB.Driver;
-using MongoDB.Driver.Linq;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using TaskBoard.PersistenceModel;
+﻿using MongoDB.Driver.Linq;
 
 namespace TaskBoard.Repository.Interface
 {
     public interface IMongoDbRepository
     {
         /// <summary>
-        /// A generic GetOne method
+        ///     A generic GetOne method
         /// </summary>
         /// <typeparam name="TEntity"></typeparam>
         /// <param name="id"></param>
         /// <returns></returns>
-        //Task<GetOneResult<TEntity>> GetOne<TEntity>(string id) where TEntity : class, new();
-
         /// <summary>
-        /// A generic GetOne method
+        ///     A generic GetOne method
         /// </summary>
         /// <typeparam name="TEntity"></typeparam>
         /// <param name="id"></param>
         /// <returns></returns>
-        //Task<GetOneResult<TEntity>> GetOne<TEntity>(FilterDefinition<TEntity> filter) where TEntity : class, new();
-
         /// <summary>
-        /// A generic get many method
+        ///     A generic get many method
         /// </summary>
         /// <typeparam name="TEntity"></typeparam>
         /// <param name="ids"></param>
         /// <returns></returns>
-        //Task<GetManyResult<TEntity>> GetMany<TEntity>(IEnumerable<string> ids) where TEntity : class, new();
-
         /// <summary>
-        /// A generic get many method with filter
+        ///     A generic get many method with filter
         /// </summary>
         /// <typeparam name="TEntity"></typeparam>
         /// <param name="ids"></param>
         /// <returns></returns>
-       // Task<GetManyResult<TEntity>> GetMany<TEntity>(FilterDefinition<TEntity> filter) where TEntity : class, new();
-
         /// <summary>
-        /// GetMany with filter and projection
+        ///     GetMany with filter and projection
         /// </summary>
         /// <typeparam name="TEntity"></typeparam>
         /// <param name="filter"></param>
         /// <returns>A cursor for the query</returns>
-        //IFindFluent<TEntity, TEntity> FindCursor<TEntity>(FilterDefinition<TEntity> filter) where TEntity : class, new();
-
         /// <summary>
-        /// A generic get all method
+        ///     A generic get all method
         /// </summary>
         /// <typeparam name="TEntity"></typeparam>
         /// <returns></returns>
@@ -105,6 +90,7 @@ namespace TaskBoard.Repository.Interface
         //Task<TEntity> DeleteMany<TEntity>(IEnumerable<string> ids) where TEntity : class, new();
 
         #region Update
+
         /// <summary>
         /// UpdateOne by id
         /// </summary>
@@ -140,6 +126,7 @@ namespace TaskBoard.Repository.Interface
         /// <param name="update"></param>
         /// <returns></returns>
         //Task<TEntity> UpdateMany<TEntity>(FilterDefinition<TEntity> filter, UpdateDefinition<TEntity> update) where TEntity : class, new();
+
         #endregion Update
 
         #region Find And Update

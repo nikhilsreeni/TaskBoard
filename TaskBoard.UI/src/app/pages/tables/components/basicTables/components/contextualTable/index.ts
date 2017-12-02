@@ -1,1 +1,1 @@
-export * from './contextualTable.component';
+export * from "./contextualTable.component";

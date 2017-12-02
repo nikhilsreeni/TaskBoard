@@ -1,1 +1,1 @@
-export * from './hoverTable.component';
+export * from "./hoverTable.component";

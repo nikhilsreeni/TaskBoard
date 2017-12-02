@@ -1,1 +1,1 @@
-export * from './inlineForm.component';
+export * from "./inlineForm.component";

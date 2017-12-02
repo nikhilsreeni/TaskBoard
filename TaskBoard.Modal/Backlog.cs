@@ -1,13 +1,7 @@
-﻿using MongoDB.Bson;
+﻿using System;
+using System.Collections.Generic;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Attributes;
-using MongoDB.Bson.Serialization.IdGenerators;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TaskBoard.PersistenceModel
 {
@@ -42,7 +36,7 @@ namespace TaskBoard.PersistenceModel
 
     public class Backlog
     {
-        [BsonId(IdGenerator = typeof(GuidIdGenerator))]
+        [BsonId(IdGenerator = typeof (GuidIdGenerator))]
         public Guid Id { get; set; }
 
         public List<Epic> Epic { get; set; }
@@ -52,8 +46,9 @@ namespace TaskBoard.PersistenceModel
     {
         public object GenerateId(object container, object document)
         {
-            return  Guid.NewGuid();
+            return Guid.NewGuid();
         }
+
         public bool IsEmpty(object id)
         {
             return string.IsNullOrEmpty(id.ToString());

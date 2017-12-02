@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-
 namespace TaskBoard.DoaminModel
 {
     public class Task

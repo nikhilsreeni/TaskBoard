@@ -1,13 +1,13 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 
 @Component({
-  selector: 'basic-form',
-  templateUrl: './basicForm.html',
+    selector: "basic-form",
+    templateUrl: "./basicForm.html",
 })
 export class BasicForm {
 
-  constructor() {
-  }
+    constructor() {
+    }
 
-  isChecked: boolean = false;
+    isChecked = false;
 }

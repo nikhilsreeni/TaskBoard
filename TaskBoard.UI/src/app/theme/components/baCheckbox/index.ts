@@ -1,1 +1,1 @@
-export * from './baCheckbox.component';
+export * from "./baCheckbox.component";

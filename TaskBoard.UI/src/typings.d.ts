@@ -1,7 +1,8 @@
 /* SystemJS module definition */
 declare var module: NodeModule;
+
 interface NodeModule {
-  id: string;
+    id: string;
 }
 
 /*
@@ -39,7 +40,7 @@ interface NodeModule {
  */
 
 interface JQuery {
-  easyPieChart;
+    easyPieChart;
 }
 
 declare var GoogleMapsLoader: any;

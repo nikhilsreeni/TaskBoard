@@ -1,1 +1,1 @@
-export * from './ratinginputs.component';
+export * from "./ratinginputs.component";

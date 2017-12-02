@@ -1,11 +1,10 @@
 ﻿#region Using Namespaces...
 
-using TaskBoard.PersistenceModel;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using TaskBoard.Repository.Interface;
 
 #endregion
@@ -13,32 +12,36 @@ using TaskBoard.Repository.Interface;
 namespace TaskBoard.Repository
 {
     /// <summary>
-    /// Generic Repository class for Entity Operations
+    ///     Generic Repository class for Entity Operations
     /// </summary>
     /// <typeparam name="TEntity"></typeparam>
     public class EntityFrameworkRepository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        #region Private member variables...
-        internal readonly TaskBoardContext Context;
-        internal DbSet<TEntity> DbSet;
-        #endregion
-
         #region Public Constructor...
+
         /// <summary>
-        /// Public Constructor,initializes privately declared local variables.
+        ///     Public Constructor,initializes privately declared local variables.
         /// </summary>
         /// <param name="context"></param>
         public EntityFrameworkRepository(TaskBoardContext context)
         {
-            this.Context = context;
-            this.DbSet = context.Set<TEntity>();
+            Context = context;
+            DbSet = context.Set<TEntity>();
         }
+
+        #endregion
+
+        #region Private member variables...
+
+        internal readonly TaskBoardContext Context;
+        internal DbSet<TEntity> DbSet;
+
         #endregion
 
         #region Public member methods...
 
         /// <summary>
-        /// generic Get method for Entities
+        ///     generic Get method for Entities
         /// </summary>
         /// <returns></returns>
         public virtual IEnumerable<TEntity> Get()
@@ -48,7 +51,7 @@ namespace TaskBoard.Repository
         }
 
         /// <summary>
-        /// Generic get method on the basis of id for Entities.
+        ///     Generic get method on the basis of id for Entities.
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -58,27 +61,27 @@ namespace TaskBoard.Repository
         }
 
         /// <summary>
-        /// generic Insert method for the entities
+        ///     generic Insert method for the entities
         /// </summary>
         /// <param name="entity"></param>
         public virtual void Add(TEntity entity)
         {
-             DbSet.Add(entity);
+            DbSet.Add(entity);
             //Context.SaveChanges();
         }
 
         /// <summary>
-        /// Generic Delete method for the entities
+        ///     Generic Delete method for the entities
         /// </summary>
         /// <param name="id"></param>
         public virtual void Delete(object id)
         {
-            TEntity entityToDelete = DbSet.Find(id);
+            var entityToDelete = DbSet.Find(id);
             Delete(entityToDelete);
         }
 
         /// <summary>
-        /// Generic Delete method for the entities
+        ///     Generic Delete method for the entities
         /// </summary>
         /// <param name="entityToDelete"></param>
         public virtual void Delete(TEntity entityToDelete)
@@ -91,7 +94,7 @@ namespace TaskBoard.Repository
         }
 
         /// <summary>
-        /// Generic update method for the entities
+        ///     Generic update method for the entities
         /// </summary>
         /// <param name="entityToUpdate"></param>
         public virtual void Update(TEntity entityToUpdate)
@@ -101,7 +104,7 @@ namespace TaskBoard.Repository
         }
 
         /// <summary>
-        /// generic method to get many record on the basis of a condition.
+        ///     generic method to get many record on the basis of a condition.
         /// </summary>
         /// <param name="where"></param>
         /// <returns></returns>
@@ -111,7 +114,7 @@ namespace TaskBoard.Repository
         }
 
         /// <summary>
-        /// generic method to get many record on the basis of a condition but query able.
+        ///     generic method to get many record on the basis of a condition but query able.
         /// </summary>
         /// <param name="where"></param>
         /// <returns></returns>
@@ -121,29 +124,29 @@ namespace TaskBoard.Repository
         }
 
         /// <summary>
-        /// generic get method , fetches data for the entities on the basis of condition.
+        ///     generic get method , fetches data for the entities on the basis of condition.
         /// </summary>
         /// <param name="where"></param>
         /// <returns></returns>
-        public TEntity Get(Func<TEntity, Boolean> where)
+        public TEntity Get(Func<TEntity, bool> where)
         {
-            return DbSet.Where(where).FirstOrDefault<TEntity>();
+            return DbSet.Where(where).FirstOrDefault();
         }
 
         /// <summary>
-        /// generic delete method , deletes data for the entities on the basis of condition.
+        ///     generic delete method , deletes data for the entities on the basis of condition.
         /// </summary>
         /// <param name="where"></param>
         /// <returns></returns>
-        public void Delete(Func<TEntity, Boolean> where)
+        public void Delete(Func<TEntity, bool> where)
         {
-            IQueryable<TEntity> objects = DbSet.Where<TEntity>(where).AsQueryable();
-            foreach (TEntity obj in objects)
+            var objects = DbSet.Where(where).AsQueryable();
+            foreach (var obj in objects)
                 DbSet.Remove(obj);
         }
 
         /// <summary>
-        /// generic method to fetch all the records from db
+        ///     generic method to fetch all the records from db
         /// </summary>
         /// <returns></returns>
         public virtual IEnumerable<TEntity> GetAll()
@@ -152,20 +155,20 @@ namespace TaskBoard.Repository
         }
 
         /// <summary>
-        /// Inclue multiple
+        ///     Inclue multiple
         /// </summary>
         /// <param name="predicate"></param>
         /// <param name="include"></param>
         /// <returns></returns>
-        public IQueryable<TEntity> GetWithInclude(System.Linq.Expressions.Expression<Func<TEntity, bool>> predicate, params string[] include)
+        public IQueryable<TEntity> GetWithInclude(Expression<Func<TEntity, bool>> predicate, params string[] include)
         {
-            IQueryable<TEntity> query = this.DbSet;
+            IQueryable<TEntity> query = DbSet;
             query = include.Aggregate(query, (current, inc) => current.Include(inc));
             return query.Where(predicate);
         }
 
         /// <summary>
-        /// Generic method to check if entity exists
+        ///     Generic method to check if entity exists
         /// </summary>
         /// <param name="primaryKey"></param>
         /// <returns></returns>
@@ -175,25 +178,24 @@ namespace TaskBoard.Repository
         }
 
         /// <summary>
-        /// Gets a single record by the specified criteria (usually the unique identifier)
+        ///     Gets a single record by the specified criteria (usually the unique identifier)
         /// </summary>
         /// <param name="predicate">Criteria to match on</param>
         /// <returns>A single record that matches the specified criteria</returns>
         public TEntity GetSingle(Func<TEntity, bool> predicate)
         {
-            return DbSet.Single<TEntity>(predicate);
+            return DbSet.Single(predicate);
         }
 
         /// <summary>
-        /// The first record matching the specified criteria
+        ///     The first record matching the specified criteria
         /// </summary>
         /// <param name="predicate">Criteria to match on</param>
         /// <returns>A single record containing the first record matching the specified criteria</returns>
         public TEntity GetFirst(Func<TEntity, bool> predicate)
         {
-            return DbSet.First<TEntity>(predicate);
+            return DbSet.First(predicate);
         }
-
 
         #endregion
     }

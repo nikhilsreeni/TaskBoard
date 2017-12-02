@@ -1,1 +1,1 @@
-export * from './horizontalForm.component';
+export * from "./horizontalForm.component";

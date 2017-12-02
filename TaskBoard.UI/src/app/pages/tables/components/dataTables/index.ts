@@ -1,1 +1,1 @@
-export * from './dataTables.component';
+export * from "./dataTables.component";

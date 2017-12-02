@@ -1,1 +1,1 @@
-export * from './groupButtons.component';
+export * from "./groupButtons.component";

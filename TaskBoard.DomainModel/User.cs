@@ -1,8 +1,8 @@
+using System;
+
 namespace TaskBoard.DomainModel
 {
-    using System;
-
-    public partial class User
+    public class User
     {
         public Guid UserID { get; set; }
 

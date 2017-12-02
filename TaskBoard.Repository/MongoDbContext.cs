@@ -1,10 +1,7 @@
-﻿using MongoDB.Driver;
-using MongoDB.Driver.Linq;
-using Nest;
-using System;
-using System.Configuration;
-using System.Linq;
+﻿using System;
 using System.Threading.Tasks;
+using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 
 namespace TaskBoard.Repository.Repository
 {
@@ -25,23 +22,24 @@ namespace TaskBoard.Repository.Repository
 
         public IMongoQueryable<TEntity> GetCollection<TEntity>()
         {
-            return _database.GetCollection<TEntity>(typeof(TEntity).Name).AsQueryable();
+            return _database.GetCollection<TEntity>(typeof (TEntity).Name).AsQueryable();
         }
 
         public void AddToCollection<TEntity>(TEntity entity)
         {
-            _database.GetCollection<TEntity>(typeof(TEntity).Name).InsertOne(entity);
+            _database.GetCollection<TEntity>(typeof (TEntity).Name).InsertOne(entity);
         }
+
         public async Task AddCollectionAsync<TEntity>(TEntity entity)
         {
-            await _database.GetCollection<TEntity>(typeof(TEntity).Name).InsertOneAsync(entity);
+            await _database.GetCollection<TEntity>(typeof (TEntity).Name).InsertOneAsync(entity);
         }
+
         public async Task UpdateEntity<TEntity>(Guid Id, TEntity entity)
         {
             var filter = Builders<TEntity>.Filter.Eq("id", "Juni");
             var update = Builders<TEntity>.Update.Set("cuisine", "American (New)").CurrentDate("lastModified");
-            var result = await _database.GetCollection<TEntity>(typeof(TEntity).Name).UpdateOneAsync(filter, update);
+            var result = await _database.GetCollection<TEntity>(typeof (TEntity).Name).UpdateOneAsync(filter, update);
         }
     }
-   
 }

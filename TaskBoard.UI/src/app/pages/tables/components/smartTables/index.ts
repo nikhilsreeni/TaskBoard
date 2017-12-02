@@ -1,1 +1,1 @@
-export * from './smartTables.component';
+export * from "./smartTables.component";

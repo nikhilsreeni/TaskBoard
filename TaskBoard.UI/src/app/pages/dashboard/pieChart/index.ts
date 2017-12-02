@@ -1,1 +1,1 @@
-export * from './pieChart.component';
+export * from "./pieChart.component";

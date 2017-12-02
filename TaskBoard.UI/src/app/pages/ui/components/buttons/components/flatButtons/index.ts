@@ -1,1 +1,1 @@
-export * from './flatButtons.component';
+export * from "./flatButtons.component";

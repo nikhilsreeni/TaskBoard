@@ -1,1 +1,1 @@
-export * from './bubbleMaps.component';
+export * from "./bubbleMaps.component";

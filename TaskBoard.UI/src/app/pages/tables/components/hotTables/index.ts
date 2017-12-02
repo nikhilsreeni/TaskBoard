@@ -1,1 +1,1 @@
-export * from './hotTables.component';
+export * from "./hotTables.component";

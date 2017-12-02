@@ -1,1 +1,1 @@
-export * from './stripedTable.component';
+export * from "./stripedTable.component";

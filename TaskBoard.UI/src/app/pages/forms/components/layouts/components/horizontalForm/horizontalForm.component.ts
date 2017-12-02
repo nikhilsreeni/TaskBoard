@@ -1,13 +1,13 @@
-import {Component} from '@angular/core';
+import {Component} from "@angular/core";
 
 @Component({
-  selector: 'horizontal-form',
-  templateUrl: './horizontalForm.html',
+    selector: "horizontal-form",
+    templateUrl: "./horizontalForm.html",
 })
 export class HorizontalForm {
 
-  constructor() {
-  }
+    constructor() {
+    }
 
-  isRemember: boolean = false;
+    isRemember = false;
 }

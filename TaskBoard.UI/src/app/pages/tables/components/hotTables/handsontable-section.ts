@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
- 
+import { Component } from "@angular/core";
+
 @Component({
-   selector: 'handsontable-section',
-   template: `
+    selector: "handsontable-section",
+    template: `
                <div class="widgets">
                   <div class="row">
                     <div class="col-md-12">
@@ -35,15 +35,15 @@ import { Component } from '@angular/core';
              `,
 })
 export class HandsontableSectionComponent {
-    currentHeading: string = 'Basic';
- 
-select(e) {
-    if (e.heading) {
-     this.currentHeading = e.heading;
+    currentHeading = "Basic";
+
+    select(e) {
+        if (e.heading) {
+            this.currentHeading = e.heading;
+        }
     }
- }
 }
- 
+
 function escape(text: string): string {
-  return text.replace(/{/g, '&#123;').replace(/}/g, '&#125;');
+    return text.replace(/{/g, "&#123;").replace(/}/g, "&#125;");
 }

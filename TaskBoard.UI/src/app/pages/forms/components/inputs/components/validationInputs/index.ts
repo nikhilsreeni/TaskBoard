@@ -1,1 +1,1 @@
-export * from './validationInputs.component';
+export * from "./validationInputs.component";

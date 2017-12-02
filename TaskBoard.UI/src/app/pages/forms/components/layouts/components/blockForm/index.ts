@@ -1,1 +1,1 @@
-export * from './blockForm.component';
+export * from "./blockForm.component";
